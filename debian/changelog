@@ -1,9 +1,0 @@
-ros-humble-tinyspline-vendor (0.6.0-1bullseye) bullseye; urgency=high
-
-  * docs: add readme
-  * feat: initial commit
-  * Contributors: Daisuke Nishimatsu
-
- -- Daisuke Nishimatsu <daisuke.nishimatsu1021@gmail.com>  Mon, 13 Mar 2023 15:00:00 -0000
-
-
