@@ -1,0 +1,32 @@
+From 2949f423142996460150697c5c27e776562e3391 Mon Sep 17 00:00:00 2001
+From: Chris Lalancette <clalancette@gmail.com>
+Date: Wed, 20 Mar 2024 13:35:06 -0400
+Subject: [PATCH] Override FetchContent flag to make sure that content is
+ populated. (#1)
+
+This flag now seems to be ON by default in our deb builds but our vendor
+packages do not currently pre-populate fetchcontent contents.
+
+I'm applying this patch at the template level assuming that even if it
+does not affect Debian as-of bookworm it will in the future and is benign otherwise.
+
+Signed-off-by: Chris Lalancette <clalancette@gmail.com>
+---
+ debian/rules.em | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/debian/rules.em b/debian/rules.em
+index 2ab7b14..0ffa0d2 100755
+--- a/debian/rules.em
++++ b/debian/rules.em
+@@ -35,6 +35,7 @@ override_dh_auto_configure:
+ 		-DCMAKE_INSTALL_PREFIX="@(InstallationPrefix)" \
+ 		-DAMENT_PREFIX_PATH="@(InstallationPrefix)" \
+ 		-DCMAKE_PREFIX_PATH="@(InstallationPrefix)" \
++		-DFETCHCONTENT_FULLY_DISCONNECTED=OFF \
+ 		$(BUILD_TESTING_ARG)
+ 
+ override_dh_auto_build:
+-- 
+2.34.1
+
