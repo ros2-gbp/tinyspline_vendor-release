@@ -1,4 +1,4 @@
-From 77452e1582461203ee7c879a41ac7121e492c2da Mon Sep 17 00:00:00 2001
+From 49a70af0f0a929186e60e034bd1e3c6468093f99 Mon Sep 17 00:00:00 2001
 From: Chris Lalancette <clalancette@gmail.com>
 Date: Wed, 20 Mar 2024 13:35:06 -0400
 Subject: [PATCH] Override FetchContent flag to make sure that content is
@@ -16,7 +16,7 @@ Signed-off-by: Chris Lalancette <clalancette@gmail.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/debian/rules.em b/debian/rules.em
-index 2ab7b14..0ffa0d2 100755
+index a856369..b36b206 100755
 --- a/debian/rules.em
 +++ b/debian/rules.em
 @@ -35,6 +35,7 @@ override_dh_auto_configure:
