@@ -1,3 +1,26 @@
+## tinyspline_vendor (rolling) - 0.6.1-1
+
+The packages in the `tinyspline_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release -r rolling -t rolling tinyspline_vendor` on `Fri, 03 May 2024 13:30:20 -0000`
+
+The `tinyspline_vendor` package was released.
+
+Version of package(s) in repository `tinyspline_vendor`:
+
+- upstream repository: https://github.com/wep21/tinyspline_vendor.git
+- release repository: https://github.com/ros2-gbp/tinyspline_vendor-release.git
+- rosdistro version: `0.6.0-5`
+- old version: `0.6.0-5`
+- new version: `0.6.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.23.0`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## tinyspline_vendor (rolling) - 0.6.0-5
 
 The packages in the `tinyspline_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling tinyspline_vendor` on `Wed, 20 Mar 2024 17:36:03 -0000`
