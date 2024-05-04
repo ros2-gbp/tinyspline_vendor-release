@@ -14,3 +14,5 @@
 
 set(tinyspline_DIR "${tinyspline_vendor_DIR}")
 set(tinysplinecxx_DIR "${tinyspline_vendor_DIR}")
+list(APPEND CMAKE_PREFIX_PATH "${tinyspline_vendor_DIR}/../../../opt/tinyspline_vendor/lib64/cmake/tinyspline")
+list(APPEND CMAKE_PREFIX_PATH "${tinyspline_vendor_DIR}/../../../opt/tinyspline_vendor/lib64/cmake/tinysplinecxx")
