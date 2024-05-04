@@ -1,0 +1,17 @@
+ros-jazzy-tinyspline-vendor (0.6.1-1noble) noble; urgency=high
+
+  * feat: use ament vendor (#1 <https://github.com/wep21/tinyspline_vendor/issues/1>)
+  * Contributors: Daisuke Nishimatsu
+
+ -- Daisuke Nishimatsu <daisuke.nishimatsu1021@gmail.com>  Fri, 03 May 2024 00:00:00 -0000
+
+ros-jazzy-tinyspline-vendor (0.6.0-1noble) noble; urgency=high
+
+  * fix: use install directory
+  * docs: add readme
+  * feat: initial commit
+  * Contributors: Daisuke Nishimatsu
+
+ -- Daisuke Nishimatsu <daisuke.nishimatsu1021@gmail.com>  Wed, 15 Mar 2023 00:00:00 -0000
+
+
